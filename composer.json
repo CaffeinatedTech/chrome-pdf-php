@@ -1,14 +1,21 @@
 {
-    "name": "nuzkito/chrome-html-to-pdf",
+    "name": "caffeinatedtech/chrome-html-to-pdf",
     "type": "library",
-    "description": "Converts HTML to PDF using Google Chrome",
+    "description": "Converts HTML to PDF using Google Chrome - updated for PHP 7.4",
     "keywords": ["html", "pdf"],
-    "homepage": "https://github.com/abalozz/chrome-pdf-php",
+    "homepage": "https://github.com/CaffeinatedTech/chrome-pdf-php",
     "authors": [
         {
             "name": "Iván Abascal Lozano",
             "email": "abalozz@outlook.com",
-            "homepage": "https://abalozz.es"
+            "homepage": "https://abalozz.es",
+            "role": "Initial Development"
+        },
+        {
+            "name": "Adam Parker",
+            "email": "caffeinatedtech@disroot.org",
+            "homepage": "http://caff.tech",
+            "role": "Further Development"
         }
     ],
     "autoload": {
