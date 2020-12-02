@@ -47,15 +47,13 @@ class ChromePdf
         return $this;
     }
 
-    public function generateFromUrl($url, $landscape=false)
+    public function generateFromUrl($url)
     {
-        $landscapeParameter = ($landscape)? "-l" : "";
         $command = sprintf(
-            '%s --headless --disable-gpu --virtual-time-budget=200 --print-to-pdf=%s %s %s 2>&1',
+            '%s --headless --disable-gpu --no-sandbox --virtual-time-budget=200 --print-to-pdf=%s %s 2>&1',
             escapeshellarg($this->binary),
             escapeshellarg($this->output),
-            escapeshellarg($url),
-            escapeshellarg($landscapeParameter)
+            escapeshellarg($url)
         );
 
         exec($command);
